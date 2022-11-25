@@ -31,6 +31,11 @@ function Counter(props) {
       return prevCounterValue <= -5 ? prevCounterValue : prevCounterValue - 1;
     });
   }
+  function plus10Handler() {
+    setCounterValue((prevCounterValue) => {
+      return prevCounterValue + 10;
+    });
+  }
 
   function resetHandler() {
     setCounterValue(() => 0);
@@ -54,6 +59,7 @@ function Counter(props) {
         <button onClick={incrementHandler}>+</button>
         <button onClick={minuzsHandler}>-</button>
         <button onClick={resetHandler}>reset</button>
+        <button onClick={plus10Handler}>+10</button>
       </div>
     </div>
   );

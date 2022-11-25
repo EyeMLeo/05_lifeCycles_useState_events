@@ -3,6 +3,7 @@ import Title from './components/Title';
 import MainTitle from './components/MainTitle';
 import Counter from './components/counters/Counter';
 import Users from './components/Users';
+import Counters from './components/counters/CounterList';
 
 function App() {
   console.log('App.jsx created');
@@ -11,8 +12,7 @@ function App() {
   return (
     <div className="App container">
       <MainTitle />
-      <Counter counterTitle="Push ups" />
-      <Counter>Push ups</Counter>
+      <Counters />
 
       {/* <Title>Events and Hooks</Title> */}
       {/* <Users /> */}
