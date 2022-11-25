@@ -49,7 +49,7 @@ function Counter(props) {
 
   return (
     <div className="counter card">
-      <h3>{props.counterTitle}</h3>
+      <h3>{props.children == null ? 'no input' : props.children}</h3>
       <h2
         className={`counter__value ${counterClassInferedLow} ${counterClassInfered}`}
       >
